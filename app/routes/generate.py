@@ -16,6 +16,25 @@ TEMPLATES = {
     "SEO Article": "Write an SEO-optimized article about '{niche}' with proper headings, subheadings, and keywords naturally incorporated."
 }
 
+# Load category data from file
+def load_category_data():
+    try:
+        with open('app/data/full_clothing_combinations.txt', 'r') as file:
+            categories = [line.strip() for line in file.readlines() if line.strip()]
+        return categories
+    except Exception as e:
+        current_app.logger.error(f"Error loading category data: {str(e)}")
+        return []
+    
+def get_categories():
+    """Endpoint to get all clothing categories"""
+    try:
+        categories = load_category_data()
+        return jsonify(categories)
+    except Exception as e:
+        current_app.logger.error(f"Error retrieving categories: {str(e)}")
+        return jsonify({'error': 'Failed to retrieve categories'}), 500
+
 @bp.route('/', methods=['POST'])
 @login_required
 @check_rate_limit
@@ -25,17 +44,38 @@ def generate_content_endpoint():
         if not data:
             return jsonify({'error': 'No data provided'}), 400
             
-        niche = data.get('niche', 'general')
-        content_type = data.get('type', 'Blog Post')
+        # Extract data from the request
+        categories = data.get('categories', [])
+        color = data.get('color', '')
+        additional_words = data.get('additionalWords', '')
+        content_type = data.get('type', 'Product Description')
         engine = data.get('engine', 'openai')
         language = data.get('language', 'en')
 
+        if not categories:
+            return jsonify({'error': 'No clothing categories provided'}), 400
+            
+        if not color:
+            return jsonify({'error': 'No primary color provided'}), 400
+            
         if content_type not in TEMPLATES:
             return jsonify({'error': f'Unknown content type. Available types: {", ".join(TEMPLATES.keys())}'}), 400
 
+        # Build the niche description from the selected categories
+        categories_str = ", ".join(categories)
+        additional_words_formatted = additional_words.strip()
+        
+        niche = f"{color} {categories_str}"
+        if additional_words_formatted:
+            keywords = [word.strip() for word in additional_words_formatted.split(',')[:5]]
+            if keywords:
+                niche += f" with these keywords: {', '.join(keywords)}"
+        
+        # Generate content based on the niche
         prompt = TEMPLATES.get(content_type).format(niche=niche)
         content = generate_content(engine, prompt)
 
+        # Translate if needed
         if language == 'bn':
             try:
                 content = translate_to_bangla(content)
@@ -56,7 +96,7 @@ def generate_content_endpoint():
         db.session.add(generation)
         db.session.commit()
 
-        return jsonify({"content": content})  # Changed to match what frontend expects
+        return jsonify({"content": content})
         
     except Exception as e:
         current_app.logger.error(f"Generation error: {str(e)}")

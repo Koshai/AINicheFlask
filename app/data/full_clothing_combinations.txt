@@ -1,0 +1,144 @@
+Men > Tops > T-Shirts > Graphic Tees
+Men > Tops > T-Shirts > Basic Tees
+Men > Tops > T-Shirts > Longline
+Men > Tops > Shirts > Dress Shirts
+Men > Tops > Shirts > Casual Shirts
+Men > Tops > Shirts > Flannel
+Men > Tops > Shirts > Linen Shirts
+Men > Tops > Polos
+Men > Tops > Tank Tops & Sleeveless
+Men > Tops > Sweaters & Cardigans > Pullover
+Men > Tops > Sweaters & Cardigans > Zip-up
+Men > Tops > Sweaters & Cardigans > Knitwear
+Men > Tops > Sweatshirts & Hoodies > Crewneck
+Men > Tops > Sweatshirts & Hoodies > Zip-up Hoodie
+Men > Tops > Sweatshirts & Hoodies > Oversized
+Men > Tops > Vests
+Men > Bottoms > Jeans > Skinny
+Men > Bottoms > Jeans > Straight
+Men > Bottoms > Jeans > Bootcut
+Men > Bottoms > Jeans > Wide-Leg
+Men > Bottoms > Jeans > Mom Jeans
+Men > Bottoms > Trousers / Pants > Dress Pants
+Men > Bottoms > Trousers / Pants > Chinos
+Men > Bottoms > Trousers / Pants > Joggers
+Men > Bottoms > Trousers / Pants > Cargo Pants
+Men > Bottoms > Trousers / Pants > Leggings
+Men > Bottoms > Trousers / Pants > Flared Pants
+Men > Bottoms > Shorts > Casual Shorts
+Men > Bottoms > Shorts > Cargo Shorts
+Men > Bottoms > Shorts > Denim Shorts
+Men > Bottoms > Shorts > Biker Shorts
+Men > Outerwear > Jackets > Bomber Jacket
+Men > Outerwear > Jackets > Denim Jacket
+Men > Outerwear > Jackets > Varsity Jacket
+Men > Outerwear > Jackets > Windbreaker
+Men > Outerwear > Coats > Trench Coat
+Men > Outerwear > Coats > Peacoat
+Men > Outerwear > Coats > Overcoat
+Men > Outerwear > Coats > Parka
+Men > Outerwear > Coats > Puffer
+Men > Outerwear > Blazers & Suit Jackets
+Men > Outerwear > Vests & Gilets
+Women > Tops > T-Shirts > Graphic Tees
+Women > Tops > T-Shirts > Basic Tees
+Women > Tops > T-Shirts > Longline
+Women > Tops > Shirts > Dress Shirts
+Women > Tops > Shirts > Casual Shirts
+Women > Tops > Shirts > Flannel
+Women > Tops > Shirts > Linen Shirts
+Women > Tops > Blouses > Wrap Blouses
+Women > Tops > Blouses > Peplum Tops
+Women > Tops > Blouses > Ruffle Blouses
+Women > Tops > Polos
+Women > Tops > Tank Tops & Sleeveless
+Women > Tops > Sweaters & Cardigans > Pullover
+Women > Tops > Sweaters & Cardigans > Zip-up
+Women > Tops > Sweaters & Cardigans > Knitwear
+Women > Tops > Sweatshirts & Hoodies > Crewneck
+Women > Tops > Sweatshirts & Hoodies > Zip-up Hoodie
+Women > Tops > Sweatshirts & Hoodies > Oversized
+Women > Tops > Crop Tops
+Women > Tops > Tunics
+Women > Tops > Vests
+Women > Bottoms > Jeans > Skinny
+Women > Bottoms > Jeans > Straight
+Women > Bottoms > Jeans > Bootcut
+Women > Bottoms > Jeans > Wide-Leg
+Women > Bottoms > Jeans > Mom Jeans
+Women > Bottoms > Trousers / Pants > Dress Pants
+Women > Bottoms > Trousers / Pants > Chinos
+Women > Bottoms > Trousers / Pants > Joggers
+Women > Bottoms > Trousers / Pants > Cargo Pants
+Women > Bottoms > Trousers / Pants > Leggings
+Women > Bottoms > Trousers / Pants > Flared Pants
+Women > Bottoms > Shorts > Casual Shorts
+Women > Bottoms > Shorts > Cargo Shorts
+Women > Bottoms > Shorts > Denim Shorts
+Women > Bottoms > Shorts > Biker Shorts
+Women > Bottoms > Skirts > Mini
+Women > Bottoms > Skirts > Midi
+Women > Bottoms > Skirts > Maxi
+Women > Bottoms > Skirts > Pleated
+Women > Bottoms > Skirts > Wrap
+Women > One-Piece > Dresses > Maxi Dress
+Women > One-Piece > Dresses > Midi Dress
+Women > One-Piece > Dresses > Mini Dress
+Women > One-Piece > Dresses > Shirt Dress
+Women > One-Piece > Dresses > Bodycon
+Women > One-Piece > Dresses > Wrap Dress
+Women > One-Piece > Jumpsuits & Rompers
+Women > One-Piece > Overalls / Dungarees
+Women > One-Piece > Nightgowns / Chemises
+Kids > Boys > Tops > T-Shirts
+Kids > Boys > Tops > Shirts
+Kids > Boys > Tops > Sweatshirts & Hoodies
+Kids > Boys > Tops > Sweaters
+Kids > Boys > Bottoms > Jeans
+Kids > Boys > Bottoms > Shorts
+Kids > Boys > Bottoms > Trousers
+Kids > Girls > Tops > T-Shirts
+Kids > Girls > Tops > Blouses
+Kids > Girls > Tops > Sweaters
+Kids > Girls > Tops > Hoodies
+Kids > Girls > Bottoms > Jeans
+Kids > Girls > Bottoms > Leggings
+Kids > Girls > Bottoms > Skirts
+Kids > Girls > Dresses
+Unisex > Tops > T-Shirts
+Unisex > Tops > Sweatshirts & Hoodies
+Unisex > Tops > Tank Tops
+Unisex > Bottoms > Jeans
+Unisex > Bottoms > Joggers
+Unisex > Bottoms > Shorts
+Unisex > Outerwear > Jackets
+Unisex > Outerwear > Coats
+Accessories > Headwear > Baseball Cap
+Accessories > Headwear > Beanies
+Accessories > Headwear > Fedoras
+Accessories > Headwear > Bucket Hats
+Accessories > Hair Accessories > Headbands
+Accessories > Hair Accessories > Scrunchies
+Accessories > Hair Accessories > Clips
+Accessories > Eyewear > Sunglasses
+Accessories > Eyewear > Glasses Frames
+Accessories > Belts & Suspenders
+Accessories > Scarves & Shawls
+Accessories > Gloves & Mittens
+Accessories > Socks & Hosiery > Crew Socks
+Accessories > Socks & Hosiery > Ankle Socks
+Accessories > Socks & Hosiery > Tights
+Accessories > Socks & Hosiery > Stockings
+Footwear > Sneakers
+Footwear > Boots > Ankle Boots
+Footwear > Boots > Chelsea Boots
+Footwear > Boots > Combat Boots
+Footwear > Sandals > Slides
+Footwear > Sandals > Gladiator Sandals
+Footwear > Formal Shoes > Loafers
+Footwear > Formal Shoes > Oxfords
+Footwear > Formal Shoes > Heels
+Footwear > Flats > Ballerinas
+Footwear > Flats > Moccasins
+Footwear > Slippers
+Footwear > Athletic Shoes
