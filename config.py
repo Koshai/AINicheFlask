@@ -2,7 +2,8 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+env_path = os.path.join(os.path.dirname(__file__), 'app', '.env')
+load_dotenv(dotenv_path=env_path)
 
 class Config:
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI') or 'sqlite:///nichegen.db'

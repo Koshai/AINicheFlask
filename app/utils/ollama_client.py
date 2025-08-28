@@ -56,16 +56,16 @@ def _generate_with_openai(prompt):
         if not api_key:
             current_app.logger.error("OpenAI API key not configured")
             return "OpenAI API key not configured. Please check your environment settings."
-            
-        client = openai.OpenAI(api_key=api_key)
         
-        response = client.chat.completions.create(
+        openai.api_key = api_key
+        
+        response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=1500
         )
         
-        return response.choices[0].message.content
+        return response.choices[0].message["content"]
     except Exception as e:
         current_app.logger.error(f"OpenAI error: {str(e)}")
         return f"Error generating content with OpenAI: {str(e)}"
