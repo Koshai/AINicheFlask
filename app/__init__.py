@@ -17,7 +17,18 @@ def create_app():
     db.init_app(app)
     bcrypt.init_app(app)
     session.init_app(app)
-    CORS(app)
+    
+    # Configure CORS for production
+    if os.environ.get('RAILWAY_ENVIRONMENT'):
+        # Production CORS - will update this after deploying Blazor app
+        CORS(app, origins=[
+            "https://*.up.railway.app",  # Allow Railway subdomains
+            "http://localhost:5152",     # Keep for local Blazor testing
+            "https://localhost:7046"     # Keep for local Blazor testing
+        ])
+    else:
+        # Development CORS
+        CORS(app)
     
     # Ensure instance folder exists
     os.makedirs(app.instance_path, exist_ok=True)

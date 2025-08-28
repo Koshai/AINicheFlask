@@ -1,12 +1,18 @@
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables from .env file (for local development)
 env_path = os.path.join(os.path.dirname(__file__), 'app', '.env')
 load_dotenv(dotenv_path=env_path)
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI') or 'sqlite:///nichegen.db'
+    # Use Railway's DATABASE_URL if available, otherwise fallback to SQLite
+    DATABASE_URL = os.environ.get('DATABASE_URL')
+    if DATABASE_URL and DATABASE_URL.startswith('postgres://'):
+        # Railway uses postgresql://, but SQLAlchemy needs postgresql://
+        DATABASE_URL = DATABASE_URL.replace('postgres://', 'postgresql://')
+    
+    SQLALCHEMY_DATABASE_URI = DATABASE_URL or os.environ.get('DATABASE_URI') or 'sqlite:///nichegen.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'supersecretkey'
     
